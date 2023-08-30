@@ -29,7 +29,7 @@
 					for (int i = 0; i < array.Length; i++)
 					{
 						array[i] = random.Next();
-						if (i%2==0) //По условию задачи позиция числа а не индекс => нечетная  позиция числа имеет четный индекс этого числа
+						if (i%2>0) 
 						{
 							tempresult += array[i]; 
 						}
@@ -59,7 +59,7 @@
 						}
 
 					}
-					Console.WriteLine(max-min);
+					Console.WriteLine($" разницa между максимальным и минимальным элементов массива {(max - min):F2}");
 				}
 				break;
 		}
